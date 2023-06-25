@@ -1,0 +1,57 @@
+local lan =
+{
+	system = "系统",
+	public = "大厅",
+	private = "私聊",
+	placeholder = "输入聊天信息",
+	privateBtn = "发送",
+	privateLabel = "暂无私聊消息",
+	system_name = "系统消息",
+	send_tip_front = "发言需要消耗",
+	send_tip_noCoin = "筹码,当前筹码不足",
+	send_tip_coin = "筹码",
+	send_tip_horn = "喇叭",
+	send_tip_noHorn = "喇叭,当前数量不足",
+	send_btn_shop = "购买",
+	send_btn_close = "关闭",
+	chat_second = "%d秒",
+	send_tip_sensitivity = "您的发言带有敏感词汇，请重新输入聊天内容",
+	send_tip_lenErr = "聊天内容不能为空，并且不能大于120个字",              --注意此处为30个字符，泰文中并不是15个字
+	send_tip_fast = "您说话太快了，先坐下喝杯水吧",
+	send_tip_PriLimitErr = "发言失败;身上剩余筹码量达到1M方可发言。",
+	send_tip_VIPLimitErr = "发言失败;vip1解锁发言。",
+	label_nochat = "系统频道禁止发送消息",
+	toggle_noprivate = "屏蔽私聊",
+	toggle_nohall = "屏蔽大厅",
+	horn_Tip = "喇叭会将你的发言在重要位置展示给全服玩家",
+	horn_Placeholder = "请点击输入文字...",
+	horn_remainder = "当前剩余喇叭 ：",
+	horn_stop = "游戏内禁止使用喇叭发言",
+	copy_succ = "复制成功",
+	condition_chip = "当前筹码达到100W",
+	limit_tips = "当前未解锁发言权限",
+	condition_vip = "成为VIP3即可解锁发言权限",
+	condition_phone = "绑定手机",
+	condition_label = "解锁发言权限条件",
+	delete = "删除",
+	BtnAddFriend = "添加好友",
+	connectfriendReturn = "请求已发送",
+	systemWarnName = "System Information",
+	systemWarnMsg = [[ระหว่างสนทนาหากพบมีเนื้อหาเกี่ยวข้องกับการส่งชิป ขอรหัสผ่านบัญชี 
+หรือขอรหัสOTPต่างๆ ห้ามให้รหัสเหล่านี้แก่ผู้อื่นโดยเด็ดขาด 
+เพื่อความปลอดภัยในทรัพย์สินท่านเอง 
+โปรดตรวจสอบตัวตนอีกฝ่ายให้ดีก่อน เพื่อป้องกันมิจฉาชีพทุจริต]],
+	systemWarnKeyWord = {
+		"ส่งชิป",
+		"ขอรหัส",
+		"OTP",
+		"รหัส",
+		"รหัสผ่าน",
+		"ขาย",
+		"sms",
+		"ซื้อ",
+	},
+	goldMedal = "金牌",
+}
+
+return lan

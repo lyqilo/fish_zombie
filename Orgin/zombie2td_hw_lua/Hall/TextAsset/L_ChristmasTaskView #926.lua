@@ -1,0 +1,37 @@
+local lan =
+{
+	title = "泼水节任务",
+	activityTime = "活动结束时间:",
+	AcquireText = "完成任务即可获得以下奖励",
+    --btnLighten = "点亮",
+    btnLighten = "使用",
+    btnFinish = "全部完成",
+    btnShare = "分享",
+    btnGo = "前往",
+    btnJP = "ดูรางวัลJP",
+    btnAward = "รายชื่อผู้ได้รางวัล",
+    remainLighten = "剩余点亮",
+    chance = "机率获得",
+    task1 = "游戏在线%s分钟",
+    task2 = "游戏累计总赢取",
+    task3 = "参与任意一场比赛",
+    task4 = "抢购1款秒杀礼包",
+    task5 = "分享1次活动页面",
+    roleName = "角色名",
+    winInfo = "中奖信息",
+    --unFinish = "当前任务未完成，请完成后点亮",
+    unFinish = "当前任务未完成，请完成后使用",
+
+    hpText = "血量",
+    remainNum = "还需泼水%s次可获最终奖励",
+    finishText = "恭喜你以完成\n所有任务",
+    desText = "完成任务使用道具进行泼水即可获得奖励，\n使用特制道具还可瓜分JP奖池彩金和水晶\n奖励哦~",
+    rule = "完成泼水节任务进行泼水,泼水次数越多奖励越高!\n使用特殊道具泼水还可获得泼水节专属入场特效！\n还有机率额外获得JP大奖和水晶奖励哦~",
+    rule1 = "使用特殊道具泼水后即可获得以下专属泼水节入场特效",
+    rule2 = "请在大厅头像处设置自己喜欢的【入场特效】",
+    rule3 = "入场特效仅在活动期间内使用有效",
+    TipText = "再泼<size=28>%s</size>水\n将有机率获得JP大奖",
+    JP = "JACKPOT",
+}
+
+return lan

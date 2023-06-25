@@ -1,0 +1,37 @@
+local lan =
+{
+	btn_BatteryGift = "炮台特惠礼包",
+	btn_SuperDailyGift = "每日特惠礼包",
+	AirDeals = "飞机礼包",
+	NoviceBtn = "新手礼包",
+	FundBtn = "7日基金",
+	btn_EveryGift = "每日礼包",
+	AchievementGiftBtn = "限时礼包",
+	LuckyBtn = "幸运礼包",
+	TreasureBtn = "每日寻宝",
+	tips_fishGift = "您今天已购买过了，请明天再来哦",
+	slot_icon = "礼包",
+	VipThreeCard = "Vip3直升卡",
+	BrokeBtn = "开运翻盘",
+	PayBtn = "充值奖励",
+	FortuneCatBtn = "招财猫",
+	BrokeBigBtn = "豪华翻盘",
+	ElkLimitGiftBtn = "圣诞节秒杀",
+	DragonBtn = "神龙转盘",
+	AirplaneBtn = "幸运轮",
+	BatteryLotteryBtn = "电音炮台",
+	MonthCardBtn = "限购月卡",
+	SpecialOfferGiftBtn = "泼水节礼包",
+	CommonHolidayGiftBtn = "特惠礼包",
+	["VipThreeCardView"] = {
+		tip1title = "ส่งชิป",
+		tip1text = "เปิดใช้งานฟังก์ชั่นส่งชิป\n1.สามารถส่งชิปให้กับเพื่อนได้\n2.ทุกครั้งการส่งชิปจะต้องส่งไม่ต่ำกว่า900,000ชิป",
+		tip2title = "ปลดล็อคแชทส่วนตัว",
+		tip2text = "1.ปลดล็อคสิทธิ์การใช้ช่องแชท\n2.ปลดล็อคสิทธิ์การใช้แชทส่วนตัว",
+		tip3title = "ปลดล็อคห้องระดับกลางทุกเกม",
+		tip3text = "",
+	},
+	Birthday = "生日特惠",
+}
+
+return lan

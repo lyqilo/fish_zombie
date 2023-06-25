@@ -1,0 +1,33 @@
+local lan = {
+    into = "转入",
+    out = "取出",
+    record = "我的记录",
+    curNumber1 = "当前可转入余额",
+    curNumber2 = "当前余额",
+    boxNumber = "保险箱余额",
+    tip = "拖动可调节比例",
+    intoTip = "请输入转入金额",
+    outTip = "请输入取出金额",
+    comTip = "是否确认取出",
+    time = "时间",
+    des = "描述",
+    count = "金额",
+    notRecord = "当前暂无记录",
+    errorTip1 = "当前输入数额小于0，请重新输入",
+    errorTip2 = "当前数额大于身上现有筹码请重试",
+    errorTip3 = "当前输入数额大于保险箱余额，请重新输入",
+    errorTip4 = "当前保险箱余额不足，无法转出",
+    recordTip = "记录仅保留最近100条",
+    guaranteeTip = "当前筹码拥有保底筹码 %s 以上才可存入",
+    
+    guideStr1 = "为保障您在游戏内账号安全，多余的筹码可存入保险箱需要时取出即可",
+    guideStr2 = "考虑游戏账号被盗风险及安全性，保险箱取出时需验证游戏安全码",
+    guideStr3 = "为了您的账号交易安全保障，请设置您的安全码",
+    continue = "继续",
+    toSet = "前往设置",
+    intoSucc = "转入成功",
+    outSucc = "取出成功",
+    comInto = "是否确认转入",
+    
+}
+return lan

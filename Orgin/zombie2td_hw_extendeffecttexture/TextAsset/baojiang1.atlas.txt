@@ -1,0 +1,69 @@
+
+baojiang1.png
+size: 188,188
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: true
+  xy: 123, 2
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+02
+  rotate: false
+  xy: 115, 72
+  size: 41, 31
+  orig: 41, 31
+  offset: 0, 0
+  index: -1
+03
+  rotate: false
+  xy: 2, 65
+  size: 111, 121
+  orig: 111, 121
+  offset: 0, 0
+  index: -1
+04
+  rotate: false
+  xy: 115, 141
+  size: 47, 45
+  orig: 47, 45
+  offset: 0, 0
+  index: -1
+05
+  rotate: false
+  xy: 115, 105
+  size: 40, 34
+  orig: 40, 34
+  offset: 0, 0
+  index: -1
+06
+  rotate: false
+  xy: 2, 9
+  size: 47, 54
+  orig: 47, 54
+  offset: 0, 0
+  index: -1
+07
+  rotate: false
+  xy: 51, 9
+  size: 38, 54
+  orig: 38, 54
+  offset: 0, 0
+  index: -1
+08
+  rotate: true
+  xy: 91, 21
+  size: 42, 30
+  orig: 42, 30
+  offset: 0, 0
+  index: -1
+09
+  rotate: false
+  xy: 123, 37
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
