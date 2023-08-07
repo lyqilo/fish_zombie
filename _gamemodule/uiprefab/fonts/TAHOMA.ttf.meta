@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ce3885950b744d6fa557df81f3a25b06
+timeCreated: 1691334420
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: "TAHOMA"
+  fontNames:
+  - Tahoma
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: zombie2td_hw_uiprefab.u3d
+  assetBundleVariant: 

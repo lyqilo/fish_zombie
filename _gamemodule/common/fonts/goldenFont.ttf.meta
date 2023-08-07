@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 70ecab1ef2434355b74b81748cfa0852
+timeCreated: 1691333029
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 0
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: "goldenFont"
+  fontNames: []
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: zombie2td_hw_exfonts.u3d
+  assetBundleVariant: 

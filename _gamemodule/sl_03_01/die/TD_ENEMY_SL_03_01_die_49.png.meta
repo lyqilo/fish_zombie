@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 4e130565b11f4b829a81eeeb493b415c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: TD_ENEMY_SL_03_01_die_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline:
+    - - {x: -43.47532, y: 20.03806}
+      - {x: -43.47532, y: 75.03806}
+      - {x: -27.47532, y: -50.96194}
+    - - {x: -25.47532, y: 92.03806}
+      - {x: -27.47532, y: -50.96194}
+      - {x: -43.47532, y: 75.03806}
+    - - {x: -16.47532, y: -52.96194}
+      - {x: -27.47532, y: -50.96194}
+      - {x: -25.47532, y: 92.03806}
+    - - {x: -15.47532, y: 94.03806}
+      - {x: -16.47532, y: -52.96194}
+      - {x: -25.47532, y: 92.03806}
+    - - {x: 9.524681, y: -52.96194}
+      - {x: -16.47532, y: -52.96194}
+      - {x: -15.47532, y: 94.03806}
+    - - {x: 50.52468, y: 94.03806}
+      - {x: 9.524681, y: -52.96194}
+      - {x: -15.47532, y: 94.03806}
+    - - {x: 54.52468, y: -7.961937}
+      - {x: 9.524681, y: -52.96194}
+      - {x: 50.52468, y: 94.03806}
+    - - {x: 54.52468, y: 81.03806}
+      - {x: 54.52468, y: -7.961937}
+      - {x: 50.52468, y: 94.03806}
+    - - {x: -54.47532, y: -87.96194}
+      - {x: -54.47532, y: -82.96194}
+      - {x: -51.47532, y: -93.96194}
+    - - {x: -53.47532, y: -80.96194}
+      - {x: -51.47532, y: -93.96194}
+      - {x: -54.47532, y: -82.96194}
+    - - {x: -49.47532, y: -75.96194}
+      - {x: -51.47532, y: -93.96194}
+      - {x: -53.47532, y: -80.96194}
+    - - {x: -37.47532, y: -93.96194}
+      - {x: -51.47532, y: -93.96194}
+      - {x: -49.47532, y: -75.96194}
+    - - {x: -36.47532, y: -75.96194}
+      - {x: -37.47532, y: -93.96194}
+      - {x: -49.47532, y: -75.96194}
+    - - {x: -35.47532, y: -91.96194}
+      - {x: -37.47532, y: -93.96194}
+      - {x: -36.47532, y: -75.96194}
+    - - {x: -35.47532, y: -81.96194}
+      - {x: -35.47532, y: -91.96194}
+      - {x: -36.47532, y: -75.96194}
+    physicsShape:
+    - - {x: -48.47532, y: -76.96193}
+      - {x: -52.47532, y: -81.96194}
+      - {x: -52.47532, y: -87.96194}
+      - {x: -48.47532, y: -92.96194}
+      - {x: -39.47532, y: -92.96194}
+      - {x: -36.47532, y: -88.96194}
+      - {x: -36.47532, y: -80.96194}
+      - {x: -41.47532, y: -76.96193}
+      - {x: 24.52468, y: 0.03806329}
+      - {x: 44.52468, y: 18.03806}
+      - {x: 48.52468, y: 23.03806}
+      - {x: 53.52468, y: 35.03806}
+      - {x: 53.52468, y: 58.03806}
+      - {x: 48.52468, y: 72.03806}
+      - {x: 35.52468, y: 86.03806}
+      - {x: 18.52468, y: 93.03806}
+      - {x: -2.475319, y: 93.03806}
+      - {x: -18.47532, y: 88.03806}
+      - {x: -23.47532, y: 85.03806}
+      - {x: -32.47532, y: 78.03806}
+      - {x: -42.47532, y: 61.03806}
+      - {x: -42.47532, y: 40.03806}
+      - {x: -38.47532, y: 27.03806}
+      - {x: -24.47532, y: 2.038063}
+      - {x: -8.475318, y: -3.961937}
+      - {x: -10.47532, y: -27.96194}
+      - {x: -17.47532, y: -31.96194}
+      - {x: -15.47532, y: -42.96194}
+      - {x: -8.475318, y: -50.96193}
+      - {x: -3.475318, y: -51.96194}
+      - {x: 6.524681, y: -51.96194}
+      - {x: 16.52468, y: -45.96194}
+      - {x: 14.52468, y: -26.96194}
+      - {x: 7.524681, y: -15.96194}
+      - {x: 12.52468, y: -25.96194}
+      - {x: 15.52468, y: -24.96194}
+      - {x: 15.52468, y: -21.96194}
+      - {x: 12.52468, y: -20.96194}
+      - {x: 10.52468, y: -22.96194}
+      - {x: -0.4753189, y: -18.96194}
+      - {x: -0.4753189, y: -6.961937}
+      - {x: 0.5246811, y: -5.961937}
+      - {x: -0.4753189, y: -3.961937}
+      - {x: -1.475319, y: -9.961937}
+      - {x: -0.4753189, y: -10.96194}
+      - {x: -0.4753189, y: -20.96194}
+      - {x: -1.475319, y: -19.96194}
+      - {x: 12.52468, y: -16.96194}
+      - {x: 14.52468, y: -18.96194}
+      - {x: 17.52468, y: -17.96194}
+      - {x: 18.52468, y: -12.96194}
+      - {x: 16.52468, y: -10.96194}
+      - {x: 13.52468, y: -11.96194}
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: zombie2td_hw_sl_03_01.u3d
+  assetBundleVariant: 

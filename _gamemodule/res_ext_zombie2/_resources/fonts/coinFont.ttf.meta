@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 01281385e3374b13aa36c50d9c9a1bcf
+timeCreated: 1691335379
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 0
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: "coinFont"
+  fontNames: []
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: zombie2td_hw_res_ext_zombie2.u3d
+  assetBundleVariant: 

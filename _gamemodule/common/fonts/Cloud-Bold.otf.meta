@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6b9b7959f58542aaa0ac8806c8b6ae39
+timeCreated: 1691333029
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: "Cloud-Bold"
+  fontNames:
+  - Cloud
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: zombie2td_hw_exfonts.u3d
+  assetBundleVariant: 

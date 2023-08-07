@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 9f08e3b9e7e64e13a9f7cc8614a349f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: TD_ENEMY_JY_0201Y_die_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline:
+    - - {x: -60.53261, y: -63.97531}
+      - {x: -60.53261, y: 50.02469}
+      - {x: -56.53261, y: -69.97531}
+    - - {x: -46.53261, y: 70.02469}
+      - {x: -56.53261, y: -69.97531}
+      - {x: -60.53261, y: 50.02469}
+    - - {x: 41.46739, y: -69.97531}
+      - {x: -56.53261, y: -69.97531}
+      - {x: -46.53261, y: 70.02469}
+    - - {x: 60.46739, y: 70.02469}
+      - {x: 41.46739, y: -69.97531}
+      - {x: -46.53261, y: 70.02469}
+    - - {x: 60.46739, y: -53.97531}
+      - {x: 41.46739, y: -69.97531}
+      - {x: 60.46739, y: 70.02469}
+    physicsShape:
+    - - {x: -8.532612, y: -29.97531}
+      - {x: -8.532612, y: -21.97531}
+      - {x: 4.467388, y: -20.97531}
+      - {x: 9.467388, y: -32.97531}
+      - {x: 20.46739, y: -37.97531}
+      - {x: 28.46739, y: -36.97531}
+      - {x: 33.46739, y: -34.97531}
+      - {x: 35.46738, y: -17.97531}
+      - {x: 30.46739, y: -10.97531}
+      - {x: 17.46739, y: -1.97531}
+      - {x: 26.46739, y: 21.02469}
+      - {x: 49.46739, y: -4.975311}
+      - {x: 56.46739, y: -6.975311}
+      - {x: 58.46738, y: -4.975311}
+      - {x: 58.46738, y: 23.02469}
+      - {x: 57.46738, y: 30.02469}
+      - {x: 48.46738, y: 42.02469}
+      - {x: 50.46739, y: 54.02469}
+      - {x: 41.46739, y: 59.02468}
+      - {x: 35.46738, y: 68.02469}
+      - {x: 32.46738, y: 68.02469}
+      - {x: 30.46739, y: 67.02469}
+      - {x: 27.46739, y: 57.02469}
+      - {x: 10.46739, y: 61.02469}
+      - {x: -3.532612, y: 63.02468}
+      - {x: -8.532612, y: 54.02469}
+      - {x: -21.53261, y: 55.02469}
+      - {x: -29.53261, y: 40.02469}
+      - {x: -39.53261, y: 35.02469}
+      - {x: -52.53261, y: 28.02469}
+      - {x: -59.53261, y: 27.02469}
+      - {x: -59.53261, y: 22.02469}
+      - {x: -50.53261, y: 9.024689}
+      - {x: -44.53261, y: -1.97531}
+      - {x: -32.53261, y: -3.97531}
+      - {x: -20.53261, y: -2.975311}
+      - {x: -23.53261, y: -7.975311}
+      - {x: -24.53261, y: -17.97531}
+      - {x: -36.53261, y: -55.97531}
+      - {x: -36.53261, y: -61.97531}
+      - {x: -30.53261, y: -67.97531}
+      - {x: -20.53261, y: -67.97531}
+      - {x: -16.53261, y: -55.97531}
+      - {x: -19.53261, y: -51.97531}
+      - {x: -7.532612, y: -38.97531}
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: zombie2td_hw_jy_02_01_y.u3d
+  assetBundleVariant: 

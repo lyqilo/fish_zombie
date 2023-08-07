@@ -1,0 +1,153 @@
+
+bosszhandou01.png
+size: 948,948
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: true
+  xy: 2, 2
+  size: 76, 143
+  orig: 76, 144
+  offset: 0, 0
+  index: -1
+02
+  rotate: false
+  xy: 832, 381
+  size: 97, 141
+  orig: 97, 141
+  offset: 0, 0
+  index: -1
+04
+  rotate: false
+  xy: 528, 135
+  size: 238, 385
+  orig: 238, 385
+  offset: 0, 0
+  index: -1
+05
+  rotate: false
+  xy: 478, 425
+  size: 48, 59
+  orig: 48, 59
+  offset: 0, 0
+  index: -1
+060
+  rotate: false
+  xy: 316, 419
+  size: 160, 252
+  orig: 160, 252
+  offset: 0, 0
+  index: -1
+07
+  rotate: true
+  xy: 471, 11
+  size: 122, 111
+  orig: 123, 111
+  offset: 0, 0
+  index: -1
+070
+  rotate: false
+  xy: 832, 524
+  size: 94, 174
+  orig: 94, 174
+  offset: 0, 0
+  index: -1
+08
+  rotate: false
+  xy: 147, 8
+  size: 137, 70
+  orig: 137, 78
+  offset: 0, 6
+  index: -1
+09
+  rotate: true
+  xy: 584, 5
+  size: 128, 89
+  orig: 128, 95
+  offset: 0, 6
+  index: -1
+10
+  rotate: true
+  xy: 768, 39
+  size: 280, 137
+  orig: 288, 137
+  offset: 8, 0
+  index: -1
+11
+  rotate: true
+  xy: 478, 486
+  size: 185, 48
+  orig: 185, 51
+  offset: 0, 1
+  index: -1
+12
+  rotate: true
+  xy: 768, 321
+  size: 64, 50
+  orig: 66, 52
+  offset: 0, 2
+  index: -1
+13
+  rotate: false
+  xy: 295, 38
+  size: 174, 129
+  orig: 174, 129
+  offset: 0, 0
+  index: -1
+14
+  rotate: true
+  xy: 768, 387
+  size: 133, 62
+  orig: 133, 62
+  offset: 0, 0
+  index: -1
+15
+  rotate: true
+  xy: 316, 169
+  size: 248, 151
+  orig: 248, 151
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 675, 58
+  size: 81, 75
+  orig: 81, 77
+  offset: 0, 1
+  index: -1
+17
+  rotate: true
+  xy: 533, 522
+  size: 424, 297
+  orig: 424, 297
+  offset: 0, 0
+  index: -1
+18
+  rotate: true
+  xy: 2, 80
+  size: 281, 291
+  orig: 281, 291
+  offset: 0, 0
+  index: -1
+19
+  rotate: false
+  xy: 2, 673
+  size: 529, 273
+  orig: 532, 273
+  offset: 0, 0
+  index: -1
+20
+  rotate: false
+  xy: 2, 363
+  size: 312, 308
+  orig: 337, 320
+  offset: 14, 6
+  index: -1
+21
+  rotate: true
+  xy: 832, 700
+  size: 246, 106
+  orig: 246, 106
+  offset: 0, 0
+  index: -1
