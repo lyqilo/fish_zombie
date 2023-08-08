@@ -42,9 +42,9 @@ Shader "cgwell/Additive Mask"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       uniform float4 _MainTex_ST;
       
@@ -110,6 +110,7 @@ Shader "cgwell/Additive Mask"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -133,7 +134,7 @@ Shader "cgwell/Additive Mask"
           
           out_v.texcoord1.xy = in_v.texcoord.xy * _Mask_ST.xy + _Mask_ST.zw;
           
-          return;
+          return out_v;
       
       }
       
@@ -151,14 +152,15 @@ Shader "cgwell/Additive Mask"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat0_d = in_f.color + in_f.color;
           
           u_xlat0_d = u_xlat0_d * _TintColor;
           
-          u_xlat10_1 = texture2D(_Mask, in_f.texcoord1.xy).x;
+          u_xlat10_1 = tex2D(_Mask, in_f.texcoord1.xy).x;
           
-          u_xlat2 = texture2D(_MainTex, in_f.texcoord.xy);
+          u_xlat2 = tex2D(_MainTex, in_f.texcoord.xy);
           
           u_xlat2.w = u_xlat10_1 * u_xlat2.w;
           
@@ -166,7 +168,7 @@ Shader "cgwell/Additive Mask"
           
           out_f.color = u_xlat0_d;
           
-          return;
+          return out_f;
       
       }
       
@@ -211,9 +213,9 @@ Shader "cgwell/Additive Mask"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       uniform float4 _MainTex_ST;
       
@@ -275,6 +277,7 @@ Shader "cgwell/Additive Mask"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           out_v.color = in_v.color;
           
@@ -302,7 +305,7 @@ Shader "cgwell/Additive Mask"
           
           out_v.texcoord1 = phase0_Output0_1.zw;
           
-          return;
+          return out_v;
       
       }
       
@@ -318,16 +321,17 @@ Shader "cgwell/Additive Mask"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat16_0 = in_f.color * _TintColor;
           
-          u_xlat10_1 = texture2D(_MainTex, in_f.texcoord1.xy);
+          u_xlat10_1 = tex2D(_MainTex, in_f.texcoord1.xy);
           
           u_xlat16_0 = u_xlat16_0 * u_xlat10_1;
           
           out_f.color = u_xlat16_0 + u_xlat16_0;
           
-          return;
+          return out_f;
       
       }
       
@@ -372,9 +376,9 @@ Shader "cgwell/Additive Mask"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       uniform float4 _MainTex_ST;
       
@@ -430,6 +434,7 @@ Shader "cgwell/Additive Mask"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           out_v.color = in_v.color;
           
@@ -453,7 +458,7 @@ Shader "cgwell/Additive Mask"
           
           out_v.vertex = unity_MatrixVP[3] * u_xlat0.wwww + u_xlat1;
           
-          return;
+          return out_v;
       
       }
       
@@ -467,12 +472,13 @@ Shader "cgwell/Additive Mask"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
-          u_xlat10_0 = texture2D(_MainTex, in_f.texcoord.xy);
+          u_xlat10_0 = tex2D(_MainTex, in_f.texcoord.xy);
           
           out_f.color = u_xlat10_0 * in_f.color;
           
-          return;
+          return out_f;
       
       }
       

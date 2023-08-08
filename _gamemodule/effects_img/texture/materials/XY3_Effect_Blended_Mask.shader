@@ -47,11 +47,11 @@ Shader "XY3/Effect/Blended_Mask"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
-      uniform float4 _Time;
+      //uniform float4 _Time;
       
       uniform float4 _TimeEditor;
       
@@ -123,6 +123,7 @@ Shader "XY3/Effect/Blended_Mask"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -144,7 +145,7 @@ Shader "XY3/Effect/Blended_Mask"
           
           out_v.color = in_v.color;
           
-          return;
+          return out_v;
       
       }
       
@@ -164,6 +165,7 @@ Shader "XY3/Effect/Blended_Mask"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat0_d.x = _Time.x + _TimeEditor.x;
           
@@ -173,9 +175,9 @@ Shader "XY3/Effect/Blended_Mask"
           
           u_xlat4.xy = u_xlat0_d.zw * _Mask_ST.xy + _Mask_ST.zw;
           
-          u_xlat10_1 = texture2D(_Mask, u_xlat4.xy);
+          u_xlat10_1 = tex2D(_Mask, u_xlat4.xy);
           
-          u_xlat10_0 = texture2D(_Texture, u_xlat0_d.xy);
+          u_xlat10_0 = tex2D(_Texture, u_xlat0_d.xy);
           
           u_xlat0_d = u_xlat10_0 * _Color;
           
@@ -183,7 +185,7 @@ Shader "XY3/Effect/Blended_Mask"
           
           out_f.color = u_xlat0_d * in_f.color;
           
-          return;
+          return out_f;
       
       }
       
@@ -218,11 +220,11 @@ Shader "XY3/Effect/Blended_Mask"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_LightShadowBias;
+      //uniform float4 unity_LightShadowBias;
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       
       
@@ -266,6 +268,7 @@ Shader "XY3/Effect/Blended_Mask"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -297,7 +300,7 @@ Shader "XY3/Effect/Blended_Mask"
           
           out_v.vertex.z = unity_LightShadowBias.y * u_xlat0.x + u_xlat4;
           
-          return;
+          return out_v;
       
       }
       
@@ -309,10 +312,11 @@ Shader "XY3/Effect/Blended_Mask"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           out_f.color = float4(0.0, 0.0, 0.0, 0.0);
           
-          return;
+          return out_f;
       
       }
       

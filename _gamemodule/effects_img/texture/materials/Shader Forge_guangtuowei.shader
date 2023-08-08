@@ -43,11 +43,11 @@ Shader "Shader Forge/guangtuowei"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
-      uniform float4 _Time;
+      //uniform float4 _Time;
       
       uniform float4 _node_5364_ST;
       
@@ -109,6 +109,7 @@ Shader "Shader Forge/guangtuowei"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -130,7 +131,7 @@ Shader "Shader Forge/guangtuowei"
           
           out_v.color = in_v.color;
           
-          return;
+          return out_v;
       
       }
       
@@ -150,26 +151,27 @@ Shader "Shader Forge/guangtuowei"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat0_d.xy = _Time.yy * float2(1.0, 0.0) + in_f.texcoord.xy;
           
           u_xlat0_d.xy = u_xlat0_d.xy * _node_5028_ST.xy + _node_5028_ST.zw;
           
-          u_xlat10_0 = texture2D(_node_5028, u_xlat0_d.xy).w;
+          u_xlat10_0 = tex2D(_node_5028, u_xlat0_d.xy).w;
           
           u_xlat2.xy = in_f.texcoord.xy * _node_5364_ST.xy + _node_5364_ST.zw;
           
-          u_xlat10_1 = texture2D(_node_5364, u_xlat2.xy);
+          u_xlat10_1 = tex2D(_node_5364, u_xlat2.xy);
           
-          u_xlat0_d.xyz = float3(u_xlat10_0) * u_xlat10_1.xyz;
+          u_xlat0_d.xyz = u_xlat10_0 * u_xlat10_1.xyz;
           
           out_f.color.w = u_xlat10_1.w * in_f.color.w;
           
           u_xlat0_d.xyz = u_xlat0_d.xyz * in_f.color.xyz;
           
-          out_f.color.xyz = u_xlat0_d.xyz * float3(_node_4432);
+          out_f.color.xyz = u_xlat0_d.xyz * _node_4432;
           
-          return;
+          return out_f;
       
       }
       
@@ -204,11 +206,11 @@ Shader "Shader Forge/guangtuowei"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_LightShadowBias;
+      //uniform float4 unity_LightShadowBias;
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       
       
@@ -252,6 +254,7 @@ Shader "Shader Forge/guangtuowei"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -283,7 +286,7 @@ Shader "Shader Forge/guangtuowei"
           
           out_v.vertex.z = unity_LightShadowBias.y * u_xlat0.x + u_xlat4;
           
-          return;
+          return out_v;
       
       }
       
@@ -295,10 +298,11 @@ Shader "Shader Forge/guangtuowei"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           out_f.color = float4(0.0, 0.0, 0.0, 0.0);
           
-          return;
+          return out_f;
       
       }
       
