@@ -41,11 +41,11 @@ Shader "Shader Forge/ZTD_Longshanguang"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
-      uniform float4 _Time;
+      //uniform float4 _Time;
       
       uniform float4 _node_5835_ST;
       
@@ -101,6 +101,7 @@ Shader "Shader Forge/ZTD_Longshanguang"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -120,7 +121,7 @@ Shader "Shader Forge/ZTD_Longshanguang"
           
           out_v.texcoord.xy = in_v.texcoord.xy;
           
-          return;
+          return out_v;
       
       }
       
@@ -140,26 +141,27 @@ Shader "Shader Forge/ZTD_Longshanguang"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat0_d.xy = _Time.yy * float2(0.100000001, 0.0500000007) + in_f.texcoord.xy;
           
           u_xlat0_d.xy = u_xlat0_d.xy * _node_326_ST.xy + _node_326_ST.zw;
           
-          u_xlat10_0 = texture2D(_node_326, u_xlat0_d.xy).w;
+          u_xlat10_0 = tex2D(_node_326, u_xlat0_d.xy).w;
           
-          u_xlat0_d.xyz = float3(u_xlat10_0) * _node_9037.xyz;
+          u_xlat0_d.xyz = float3(u_xlat10_0,0,0) * _node_9037.xyz;
           
           u_xlat1_d.xy = in_f.texcoord.xy * _node_5835_ST.xy + _node_5835_ST.zw;
           
-          u_xlat10_6 = texture2D(_node_5835, u_xlat1_d.xy).w;
+          u_xlat10_6 = tex2D(_node_5835, u_xlat1_d.xy).w;
           
-          u_xlat0_d.xyz = u_xlat0_d.xyz * float3(u_xlat10_6);
+          u_xlat0_d.xyz = u_xlat0_d.xyz * float3(u_xlat10_6,0,0);
           
           out_f.color.xyz = u_xlat0_d.xyz * float3(3.0, 3.0, 3.0);
           
           out_f.color.w = 1.0;
           
-          return;
+          return out_f;
       
       }
       

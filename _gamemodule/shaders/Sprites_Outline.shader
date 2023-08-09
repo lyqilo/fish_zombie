@@ -38,9 +38,9 @@ Shader "Sprites/Outline"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       uniform float4 _MainTex_TexelSize;
       
@@ -130,6 +130,7 @@ Shader "Sprites/Outline"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -147,31 +148,31 @@ Shader "Sprites/Outline"
           
           out_v.vertex = unity_MatrixVP[3] * u_xlat0.wwww + u_xlat1;
           
-          out_v.texcoord.xy = (-_MainTex_TexelSize.xy) * float2(_Width) + in_v.texcoord.xy;
+          out_v.texcoord.xy = (-_MainTex_TexelSize.xy) * float2(_Width,0) + in_v.texcoord.xy;
           
           u_xlat16_0 = _MainTex_TexelSize.xyxy * float4(0.0, -1.0, 1.0, -1.0);
           
-          out_v.texcoord1.xy = u_xlat16_0.xy * float2(_Width) + in_v.texcoord.xy;
+          out_v.texcoord1.xy = u_xlat16_0.xy * float2(_Width,0) + in_v.texcoord.xy;
           
-          out_v.texcoord2.xy = u_xlat16_0.zw * float2(_Width) + in_v.texcoord.xy;
+          out_v.texcoord2.xy = u_xlat16_0.zw * float2(_Width,0) + in_v.texcoord.xy;
           
           u_xlat16_0 = _MainTex_TexelSize.xyxy * float4(-1.0, 0.0, 1.0, 0.0);
           
-          out_v.texcoord3.xy = u_xlat16_0.xy * float2(_Width) + in_v.texcoord.xy;
+          out_v.texcoord3.xy = u_xlat16_0.xy * float2(_Width,0) + in_v.texcoord.xy;
           
-          out_v.texcoord5.xy = u_xlat16_0.zw * float2(_Width) + in_v.texcoord.xy;
+          out_v.texcoord5.xy = u_xlat16_0.zw * float2(_Width,0) + in_v.texcoord.xy;
           
           out_v.texcoord4.xy = in_v.texcoord.xy;
           
           u_xlat16_0 = _MainTex_TexelSize.xyxy * float4(-1.0, 1.0, 0.0, 1.0);
           
-          out_v.texcoord6.xy = u_xlat16_0.xy * float2(_Width) + in_v.texcoord.xy;
+          out_v.texcoord6.xy = u_xlat16_0.xy * float2(_Width,0) + in_v.texcoord.xy;
           
-          out_v.texcoord7.xy = u_xlat16_0.zw * float2(_Width) + in_v.texcoord.xy;
+          out_v.texcoord7.xy = u_xlat16_0.zw * float2(_Width,0) + in_v.texcoord.xy;
           
-          out_v.texcoord8.xy = _MainTex_TexelSize.xy * float2(_Width) + in_v.texcoord.xy;
+          out_v.texcoord8.xy = _MainTex_TexelSize.xy * float2(_Width,0) + in_v.texcoord.xy;
           
-          return;
+          return out_v;
       
       }
       
@@ -205,6 +206,7 @@ Shader "Sprites/Outline"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           phase0_Input0_1[0].xy = in_f.texcoord;
           
@@ -231,7 +233,7 @@ Shader "Sprites/Outline"
           
               {
               
-              u_xlat10_3 = texture2D(_MainTex, phase0_Input0_1[u_xlati_loop_1].xy).w;
+              u_xlat10_3 = tex2D(_MainTex, phase0_Input0_1[u_xlati_loop_1].xy).w;
               
               u_xlat16_0_d = u_xlat16_0_d + u_xlat10_3;
       
@@ -241,7 +243,7 @@ Shader "Sprites/Outline"
           
           u_xlat0_d.w = u_xlatb1 ? 1.0 : float(0.0);
           
-          u_xlat10_1 = texture2D(_MainTex, phase0_Input0_1[4].xy);
+          u_xlat10_1 = tex2D(_MainTex, phase0_Input0_1[4].xy);
           
           u_xlatb7 = 0.5<u_xlat10_1.w;
           
@@ -249,11 +251,11 @@ Shader "Sprites/Outline"
           
           u_xlat1_d.xyz = u_xlat10_1.xyz + (-_OutlineColor.xyz);
           
-          u_xlat0_d.xyz = float3(u_xlat7) * u_xlat1_d.xyz + _OutlineColor.xyz;
+          u_xlat0_d.xyz = float3(u_xlat7,0,0) * u_xlat1_d.xyz + _OutlineColor.xyz;
           
           out_f.color = u_xlat0_d;
           
-          return;
+          return out_f;
       
       }
       

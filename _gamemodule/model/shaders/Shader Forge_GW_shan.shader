@@ -46,19 +46,19 @@ Shader "Shader Forge/GW_shan"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_WorldToObject[4];
+      //uniform float4 unity_WorldToObject[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
-      uniform float4 _Time;
+      //uniform float4 _Time;
       
       // uniform float3 _WorldSpaceCameraPos;
       
-      uniform float4 _WorldSpaceLightPos0;
+      //uniform float4 _WorldSpaceLightPos0;
       
-      uniform float4 unity_SpecCube0_HDR;
+      //uniform float4 unity_SpecCube0_HDR;
       
       uniform float4 _LightColor0;
       
@@ -86,7 +86,7 @@ Shader "Shader Forge/GW_shan"
       
       uniform sampler2D _t2;
       
-      uniform samplerCUBE unity_SpecCube0;
+      //uniform samplerCUBE unity_SpecCube0;
       
       
       
@@ -162,6 +162,7 @@ Shader "Shader Forge/GW_shan"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -195,9 +196,9 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat9 = dot(u_xlat0.xyz, u_xlat0.xyz);
           
-          u_xlat9 = inversesqrt(u_xlat9);
+          u_xlat9 = rsqrt(u_xlat9);
           
-          u_xlat0.xyz = float3(u_xlat9) * u_xlat0.xyz;
+          u_xlat0.xyz = float3(u_xlat9,0,0) * u_xlat0.xyz;
           
           out_v.texcoord4.xyz = u_xlat0.xyz;
           
@@ -209,9 +210,9 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat9 = dot(u_xlat1.xyz, u_xlat1.xyz);
           
-          u_xlat9 = inversesqrt(u_xlat9);
+          u_xlat9 = rsqrt(u_xlat9);
           
-          u_xlat1.xyz = float3(u_xlat9) * u_xlat1.xyz;
+          u_xlat1.xyz = float3(u_xlat9,0,0) * u_xlat1.xyz;
           
           out_v.texcoord5.xyz = u_xlat1.xyz;
           
@@ -223,13 +224,13 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat9 = dot(u_xlat0.xyz, u_xlat0.xyz);
           
-          u_xlat9 = inversesqrt(u_xlat9);
+          u_xlat9 = rsqrt(u_xlat9);
           
-          out_v.texcoord6.xyz = float3(u_xlat9) * u_xlat0.xyz;
+          out_v.texcoord6.xyz = float3(u_xlat9,0,0) * u_xlat0.xyz;
           
           out_v.texcoord9 = float4(0.0, 0.0, 0.0, 0.0);
           
-          return;
+          return out_v;
       
       }
       
@@ -289,10 +290,11 @@ Shader "Shader Forge/GW_shan"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat0_d.xy = in_f.texcoord.xy * _t1_ST.xy + _t1_ST.zw;
           
-          u_xlat10_0.xy = texture2D(_t1, u_xlat0_d.xy).xz;
+          u_xlat10_0.xy = tex2D(_t1, u_xlat0_d.xy).xz;
           
           u_xlat16_1.x = u_xlat10_0.y * 1.09200001;
           
@@ -311,7 +313,7 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat0_d.xy = in_f.texcoord.xy * _t2_ST.xy + _t2_ST.zw;
           
-          u_xlat10_0.xyz = texture2D(_t2, u_xlat0_d.xy).xyz;
+          u_xlat10_0.xyz = tex2D(_t2, u_xlat0_d.xy).xyz;
           
           u_xlat16_2.xyz = u_xlat10_0.xyz + (-_c.xyz);
           
@@ -325,31 +327,31 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat16_3.xyz = u_xlat16_1.xyz + float3(-0.220916301, -0.220916301, -0.220916301);
           
-          u_xlat16_3.xyz = float3(_Metallic) * u_xlat16_3.xyz + float3(0.220916301, 0.220916301, 0.220916301);
+          u_xlat16_3.xyz = float3(_Metallic,0,0) * u_xlat16_3.xyz + float3(0.220916301, 0.220916301, 0.220916301);
           
           u_xlat16_4.xyz = (-u_xlat16_3.xyz) + float3(1.0, 1.0, 1.0);
           
           u_xlat16_31 = dot(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz);
           
-          u_xlat16_31 = inversesqrt(u_xlat16_31);
+          u_xlat16_31 = sqrt(u_xlat16_31);
           
-          u_xlat16_5.xyz = float3(u_xlat16_31) * _WorldSpaceLightPos0.xyz;
+          u_xlat16_5.xyz = float3(u_xlat16_31,0,0) * _WorldSpaceLightPos0.xyz;
           
           u_xlat0_d.xyz = (-in_f.texcoord3.xyz) + _WorldSpaceCameraPos.xyz;
           
           u_xlat30 = dot(u_xlat0_d.xyz, u_xlat0_d.xyz);
           
-          u_xlat30 = inversesqrt(u_xlat30);
+          u_xlat30 = sqrt(u_xlat30);
           
-          u_xlat6.xyz = u_xlat0_d.xyz * float3(u_xlat30) + u_xlat16_5.xyz;
+          u_xlat6.xyz = u_xlat0_d.xyz * float3(u_xlat30,0,0) + u_xlat16_5.xyz;
           
-          u_xlat0_d.xyz = float3(u_xlat30) * u_xlat0_d.xyz;
+          u_xlat0_d.xyz = float3(u_xlat30,0,0) * u_xlat0_d.xyz;
           
           u_xlat30 = dot(u_xlat6.xyz, u_xlat6.xyz);
           
-          u_xlat30 = inversesqrt(u_xlat30);
+          u_xlat30 = sqrt(u_xlat30);
           
-          u_xlat6.xyz = float3(u_xlat30) * u_xlat6.xyz;
+          u_xlat6.xyz = float3(u_xlat30,0,0) * u_xlat6.xyz;
           
           u_xlat30 = dot(u_xlat16_5.xyz, u_xlat6.xyz);
           
@@ -365,7 +367,7 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat16_31 = u_xlat16_31 * u_xlat16_32;
           
-          u_xlat16_4.xyz = u_xlat16_4.xyz * float3(u_xlat16_31) + u_xlat16_3.xyz;
+          u_xlat16_4.xyz = u_xlat16_4.xyz * float3(u_xlat16_31,0,0) + u_xlat16_3.xyz;
           
           u_xlat36 = dot(u_xlat16_3.xyz, u_xlat16_3.xyz);
           
@@ -375,7 +377,7 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat7.x = dot(in_f.texcoord4.xyz, in_f.texcoord4.xyz);
           
-          u_xlat7.x = inversesqrt(u_xlat7.x);
+          u_xlat7.x = sqrt(u_xlat7.x);
           
           u_xlat7.xyz = u_xlat7.xxx * in_f.texcoord4.xyz;
           
@@ -451,7 +453,7 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat16_31 = u_xlat16_31 * u_xlat6.x;
           
-          u_xlat30 = dot(float2(u_xlat30), u_xlat6.xx);
+          u_xlat30 = dot(float2(u_xlat30,0), u_xlat6.xx);
           
           u_xlat30 = u_xlat30 + 0.5;
           
@@ -459,7 +461,9 @@ Shader "Shader Forge/GW_shan"
           
           u_xlat16_31 = u_xlat16_31 * 6.0;
           
-          u_xlat10_0 = textureCube(unity_SpecCube0, u_xlat0_d.xyz, u_xlat16_31);
+          //u_xlat10_0 = textureCube(unity_SpecCube0, u_xlat0_d.xyz, u_xlat16_31);
+          
+          u_xlat10_0 = texCUBE(unity_SpecCube0, u_xlat0_d.xyz) * u_xlat16_31;
           
           u_xlat16_31 = u_xlat10_0.w + -1.0;
           
@@ -555,7 +559,7 @@ Shader "Shader Forge/GW_shan"
           
           out_f.color.w = 1.0;
           
-          return;
+          return out_f;
       
       }
       
@@ -588,11 +592,11 @@ Shader "Shader Forge/GW_shan"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_LightShadowBias;
+      //uniform float4 unity_LightShadowBias;
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       uniform float4 _t1_ST;
       
@@ -656,6 +660,7 @@ Shader "Shader Forge/GW_shan"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -695,7 +700,7 @@ Shader "Shader Forge/GW_shan"
           
           out_v.texcoord3.xy = in_v.texcoord2.xy;
           
-          return;
+          return out_v;
       
       }
       
@@ -715,10 +720,11 @@ Shader "Shader Forge/GW_shan"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat0_d.xy = in_f.texcoord1.xy * _t1_ST.xy + _t1_ST.zw;
           
-          u_xlat10_0 = texture2D(_t1, u_xlat0_d.xy).z;
+          u_xlat10_0 = tex2D(_t1, u_xlat0_d.xy).z;
           
           u_xlat16_1 = u_xlat10_0 * 1.09200001;
           
@@ -731,7 +737,7 @@ Shader "Shader Forge/GW_shan"
           
           out_f.color = float4(0.0, 0.0, 0.0, 0.0);
           
-          return;
+          return out_f;
       
       }
       

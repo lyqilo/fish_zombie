@@ -48,11 +48,11 @@ Shader "Shader Forge/ywShader"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
-      uniform float4 _Time;
+      //uniform float4 _Time;
       
       uniform float4 _TimeEditor;
       
@@ -120,6 +120,7 @@ Shader "Shader Forge/ywShader"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -139,7 +140,7 @@ Shader "Shader Forge/ywShader"
           
           out_v.texcoord.xy = in_v.texcoord.xy;
           
-          return;
+          return out_v;
       
       }
       
@@ -163,6 +164,7 @@ Shader "Shader Forge/ywShader"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat0_d.xy = in_f.texcoord.xy + float2(-0.5, -0.5);
           
@@ -186,13 +188,13 @@ Shader "Shader Forge/ywShader"
           
           u_xlat1_d.xy = u_xlat1_d.xy * _MainTex_ST.xy + _MainTex_ST.zw;
           
-          u_xlat10_1.xyz = texture2D(_MainTex, u_xlat1_d.xy).xyz;
+          u_xlat10_1.xyz = tex2D(_MainTex, u_xlat1_d.xy).xyz;
           
           u_xlat1_d.xyz = u_xlat10_1.xyz * float3(float3(_node_dise01, _node_dise01, _node_dise01));
           
           u_xlat1_d.xyz = u_xlat1_d.xyz * _node_dise02.xyz;
           
-          u_xlat10_2.xyz = texture2D(_node_943, u_xlat6.xy).xyz;
+          u_xlat10_2.xyz = tex2D(_node_943, u_xlat6.xy).xyz;
           
           u_xlat3.xyz = u_xlat3.xxx * u_xlat10_2.xyz;
           
@@ -208,7 +210,7 @@ Shader "Shader Forge/ywShader"
           
           out_f.color.w = exp2(u_xlat0_d.x);
           
-          return;
+          return out_f;
       
       }
       
@@ -243,11 +245,11 @@ Shader "Shader Forge/ywShader"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_LightShadowBias;
+      //uniform float4 unity_LightShadowBias;
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       
       
@@ -291,6 +293,7 @@ Shader "Shader Forge/ywShader"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -322,7 +325,7 @@ Shader "Shader Forge/ywShader"
           
           out_v.vertex.z = unity_LightShadowBias.y * u_xlat0.x + u_xlat4;
           
-          return;
+          return out_v;
       
       }
       
@@ -334,10 +337,11 @@ Shader "Shader Forge/ywShader"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           out_f.color = float4(0.0, 0.0, 0.0, 0.0);
           
-          return;
+          return out_f;
       
       }
       
