@@ -65,9 +65,9 @@ Shader "Custom/ztd_Gray"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       uniform float4 _Color;
       
@@ -125,6 +125,7 @@ Shader "Custom/ztd_Gray"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -148,7 +149,7 @@ Shader "Custom/ztd_Gray"
           
           out_v.texcoord.xy = in_v.texcoord.xy;
           
-          return;
+          return out_v;
       
       }
       
@@ -166,8 +167,9 @@ Shader "Custom/ztd_Gray"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
-          u_xlat10_0 = texture2D(_MainTex, in_f.texcoord.xy);
+          u_xlat10_0 = tex2D(_MainTex, in_f.texcoord.xy);
           
           u_xlat0_d = u_xlat10_0 * in_f.color;
           
@@ -179,7 +181,7 @@ Shader "Custom/ztd_Gray"
           
           out_f.color.w = u_xlat0_d.w;
           
-          return;
+          return out_f;
       
       }
       

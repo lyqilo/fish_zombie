@@ -102,7 +102,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: 73d78c2a671c420684b8fcb0725758b5, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -2401,7 +2401,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1492851117
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1001
   m_RenderMode: 0
@@ -2495,7 +2495,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: 73d78c2a671c420684b8fcb0725758b5, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -4986,7 +4986,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1492851117
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1001
   m_RenderMode: 1
@@ -5226,7 +5226,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: -893668173
+  m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &3626515554912774152
@@ -7536,7 +7536,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1492851117
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1000
   m_RenderMode: 0
@@ -10022,7 +10022,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1492851117
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1000
   m_RenderMode: 1
@@ -10116,7 +10116,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: 73d78c2a671c420684b8fcb0725758b5, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -10195,7 +10195,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: 73d78c2a671c420684b8fcb0725758b5, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -12496,7 +12496,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1492851117
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1000
   m_RenderMode: 4
@@ -12720,7 +12720,7 @@ MonoBehaviour:
     m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 2571944174975034952}
   m_FillRect: {fileID: 9002001582251245341}
   m_HandleRect: {fileID: 9080700207168765369}
   m_Direction: 0

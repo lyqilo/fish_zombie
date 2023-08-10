@@ -44,17 +44,17 @@ Shader "Shader Forge/Mod_guawu"
       #define CODE_BLOCK_VERTEX
       
       
-      uniform float4 unity_ObjectToWorld[4];
+      //uniform float4 unity_ObjectToWorld[4];
       
-      uniform float4 unity_WorldToObject[4];
+      //uniform float4 unity_WorldToObject[4];
       
-      uniform float4 unity_MatrixVP[4];
+      //uniform float4 unity_MatrixVP[4];
       
       // uniform float3 _WorldSpaceCameraPos;
       
-      uniform float4 _WorldSpaceLightPos0;
+      //uniform float4 _WorldSpaceLightPos0;
       
-      uniform float4 unity_SpecCube0_HDR;
+      //uniform float4 unity_SpecCube0_HDR;
       
       uniform float4 _LightColor0;
       
@@ -76,7 +76,7 @@ Shader "Shader Forge/Mod_guawu"
       
       uniform sampler2D _t2;
       
-      uniform samplerCUBE unity_SpecCube0;
+      //uniform samplerCUBE unity_SpecCube0;
       
       
       
@@ -152,6 +152,7 @@ Shader "Shader Forge/Mod_guawu"
       
       OUT_Data_Vert vert(appdata_t in_v)
       {
+          OUT_Data_Vert out_v;
           
           u_xlat0 = in_v.vertex.yyyy * unity_ObjectToWorld[1];
           
@@ -185,9 +186,9 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat9 = dot(u_xlat0.xyz, u_xlat0.xyz);
           
-          u_xlat9 = inversesqrt(u_xlat9);
+          u_xlat9 = sqrt(u_xlat9);
           
-          u_xlat0.xyz = float3(u_xlat9) * u_xlat0.xyz;
+          u_xlat0.xyz = float3(u_xlat9,0,0) * u_xlat0.xyz;
           
           out_v.texcoord4.xyz = u_xlat0.xyz;
           
@@ -199,9 +200,9 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat9 = dot(u_xlat1.xyz, u_xlat1.xyz);
           
-          u_xlat9 = inversesqrt(u_xlat9);
+          u_xlat9 = sqrt(u_xlat9);
           
-          u_xlat1.xyz = float3(u_xlat9) * u_xlat1.xyz;
+          u_xlat1.xyz = float3(u_xlat9,0,0) * u_xlat1.xyz;
           
           out_v.texcoord5.xyz = u_xlat1.xyz;
           
@@ -213,13 +214,13 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat9 = dot(u_xlat0.xyz, u_xlat0.xyz);
           
-          u_xlat9 = inversesqrt(u_xlat9);
+          u_xlat9 = sqrt(u_xlat9);
           
-          out_v.texcoord6.xyz = float3(u_xlat9) * u_xlat0.xyz;
+          out_v.texcoord6.xyz = float3(u_xlat9,0,0) * u_xlat0.xyz;
           
           out_v.texcoord10 = float4(0.0, 0.0, 0.0, 0.0);
           
-          return;
+          return out_v;
       
       }
       
@@ -283,10 +284,11 @@ Shader "Shader Forge/Mod_guawu"
       
       OUT_Data_Frag frag(v2f in_f)
       {
+          OUT_Data_Frag out_f;
           
           u_xlat0_d.xy = in_f.texcoord.xy * _t1_ST.xy + _t1_ST.zw;
           
-          u_xlat10_0.xy = texture2D(_t1, u_xlat0_d.xy).xz;
+          u_xlat10_0.xy = tex2D(_t1, u_xlat0_d.xy).xz;
           
           u_xlat16_1.x = u_xlat10_0.y * 1.09200001;
           
@@ -305,7 +307,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat0_d.xy = in_f.texcoord.xy * _t2_ST.xy + _t2_ST.zw;
           
-          u_xlat10_0.xyz = texture2D(_t2, u_xlat0_d.xy).xyz;
+          u_xlat10_0.xyz = tex2D(_t2, u_xlat0_d.xy).xyz;
           
           u_xlat16_2.xyz = u_xlat10_0.xyz + (-_c.xyz);
           
@@ -317,31 +319,31 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat16_2.xyz = u_xlat16_1.xyz + float3(-0.220916301, -0.220916301, -0.220916301);
           
-          u_xlat16_2.xyz = float3(_Metallic) * u_xlat16_2.xyz + float3(0.220916301, 0.220916301, 0.220916301);
+          u_xlat16_2.xyz = float3(_Metallic,0,0) * u_xlat16_2.xyz + float3(0.220916301, 0.220916301, 0.220916301);
           
           u_xlat16_3.xyz = (-u_xlat16_2.xyz) + float3(1.0, 1.0, 1.0);
           
           u_xlat16_34 = dot(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz);
           
-          u_xlat16_34 = inversesqrt(u_xlat16_34);
+          u_xlat16_34 = sqrt(u_xlat16_34);
           
-          u_xlat16_4.xyz = float3(u_xlat16_34) * _WorldSpaceLightPos0.xyz;
+          u_xlat16_4.xyz = float3(u_xlat16_34,0,0) * _WorldSpaceLightPos0.xyz;
           
           u_xlat5.xyz = (-in_f.texcoord3.xyz) + _WorldSpaceCameraPos.xyz;
           
           u_xlat33 = dot(u_xlat5.xyz, u_xlat5.xyz);
           
-          u_xlat33 = inversesqrt(u_xlat33);
+          u_xlat33 = sqrt(u_xlat33);
           
-          u_xlat6.xyz = u_xlat5.xyz * float3(u_xlat33) + u_xlat16_4.xyz;
+          u_xlat6.xyz = u_xlat5.xyz * float3(u_xlat33,0,0) + u_xlat16_4.xyz;
           
-          u_xlat5.xyz = float3(u_xlat33) * u_xlat5.xyz;
+          u_xlat5.xyz = float3(u_xlat33,0,0) * u_xlat5.xyz;
           
           u_xlat33 = dot(u_xlat6.xyz, u_xlat6.xyz);
           
-          u_xlat33 = inversesqrt(u_xlat33);
+          u_xlat33 = sqrt(u_xlat33);
           
-          u_xlat6.xyz = float3(u_xlat33) * u_xlat6.xyz;
+          u_xlat6.xyz = float3(u_xlat33,0,0) * u_xlat6.xyz;
           
           u_xlat33 = dot(u_xlat16_4.xyz, u_xlat6.xyz);
           
@@ -357,13 +359,13 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat16_34 = u_xlat16_34 * u_xlat16_35;
           
-          u_xlat16_3.xyz = u_xlat16_3.xyz * float3(u_xlat16_34) + u_xlat16_2.xyz;
+          u_xlat16_3.xyz = u_xlat16_3.xyz * float3(u_xlat16_34,0,0) + u_xlat16_2.xyz;
           
           u_xlat38 = dot(in_f.texcoord4.xyz, in_f.texcoord4.xyz);
           
-          u_xlat38 = inversesqrt(u_xlat38);
+          u_xlat38 = sqrt(u_xlat38);
           
-          u_xlat7.xyz = float3(u_xlat38) * in_f.texcoord4.xyz;
+          u_xlat7.xyz = float3(u_xlat38,0,0) * in_f.texcoord4.xyz;
           
           u_xlat38 = dot(u_xlat7.xyz, u_xlat6.xyz);
           
@@ -429,13 +431,13 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat38 = u_xlat38 * u_xlat28;
           
-          u_xlat19.xyz = float3(u_xlat38) * _LightColor0.xyz;
+          u_xlat19.xyz = float3(u_xlat38,0,0) * _LightColor0.xyz;
           
           u_xlat38 = dot((-u_xlat5.xyz), u_xlat7.xyz);
           
           u_xlat38 = u_xlat38 + u_xlat38;
           
-          u_xlat5.xyz = u_xlat7.xyz * (-float3(u_xlat38)) + (-u_xlat5.xyz);
+          u_xlat5.xyz = u_xlat7.xyz * (-float3(u_xlat38,0,0)) + (-u_xlat5.xyz);
           
           u_xlat38 = (-_Gloss) + 1.0;
           
@@ -443,7 +445,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat16_34 = u_xlat16_34 * u_xlat38;
           
-          u_xlat33 = dot(float2(u_xlat33), float2(u_xlat38));
+          u_xlat33 = dot(float2(u_xlat33,0), float2(u_xlat38,0));
           
           u_xlat33 = u_xlat33 + 0.5;
           
@@ -459,7 +461,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat16_34 = u_xlat16_34 * unity_SpecCube0_HDR.x;
           
-          u_xlat16_9.xyz = u_xlat10_4.xyz * float3(u_xlat16_34);
+          u_xlat16_9.xyz = u_xlat10_4.xyz * float3(u_xlat16_34,0,0);
           
           u_xlat16_34 = -abs(u_xlat8) + 1.0;
           
@@ -475,7 +477,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat5.x = (-u_xlat16_36) + 1.0;
           
-          u_xlat16_1.xyz = u_xlat16_1.xyz * float3(u_xlat16_36);
+          u_xlat16_1.xyz = u_xlat16_1.xyz * float3(u_xlat16_36,0,0);
           
           u_xlat5.x = u_xlat5.x + _Gloss;
           
@@ -483,7 +485,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat16_10.xyz = (-u_xlat16_2.xyz) + u_xlat5.xxx;
           
-          u_xlat16_2.xyz = float3(u_xlat16_34) * u_xlat16_10.xyz + u_xlat16_2.xyz;
+          u_xlat16_2.xyz = float3(u_xlat16_34,0,0) * u_xlat16_10.xyz + u_xlat16_2.xyz;
           
           u_xlat5.xyz = u_xlat16_2.xyz * u_xlat16_9.xyz;
           
@@ -517,7 +519,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat33 = u_xlat17 * u_xlat33;
           
-          u_xlat6.xyz = float3(u_xlat33) * _LightColor0.xyz;
+          u_xlat6.xyz = float3(u_xlat33,0,0) * _LightColor0.xyz;
           
           u_xlat5.xyz = u_xlat6.xyz * u_xlat16_1.xyz + u_xlat5.xyz;
           
@@ -525,7 +527,7 @@ Shader "Shader Forge/Mod_guawu"
           
           out_f.color.w = 1.0;
           
-          return;
+          return out_f;
       
       }
       
@@ -703,7 +705,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat13 = dot(u_xlat1.xyz, u_xlat1.xyz);
           
-          u_xlat13 = inversesqrt(u_xlat13);
+          u_xlat13 = sqrt(u_xlat13);
           
           u_xlat1.xyz = float3(u_xlat13) * u_xlat1.xyz;
           
@@ -717,7 +719,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat13 = dot(u_xlat2.xyz, u_xlat2.xyz);
           
-          u_xlat13 = inversesqrt(u_xlat13);
+          u_xlat13 = sqrt(u_xlat13);
           
           u_xlat2.xyz = float3(u_xlat13) * u_xlat2.xyz;
           
@@ -731,7 +733,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat13 = dot(u_xlat1.xyz, u_xlat1.xyz);
           
-          u_xlat13 = inversesqrt(u_xlat13);
+          u_xlat13 = sqrt(u_xlat13);
           
           out_v.texcoord6.xyz = float3(u_xlat13) * u_xlat1.xyz;
           
@@ -800,7 +802,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat0_d.xy = in_f.texcoord.xy * _t1_ST.xy + _t1_ST.zw;
           
-          u_xlat10_0.xy = texture2D(_t1, u_xlat0_d.xy).xz;
+          u_xlat10_0.xy = tex2D(_t1, u_xlat0_d.xy).xz;
           
           u_xlat16_1.x = u_xlat10_0.y * 1.09200001;
           
@@ -819,7 +821,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat0_d.xy = in_f.texcoord.xy * _t2_ST.xy + _t2_ST.zw;
           
-          u_xlat10_0.xyz = texture2D(_t2, u_xlat0_d.xy).xyz;
+          u_xlat10_0.xyz = tex2D(_t2, u_xlat0_d.xy).xyz;
           
           u_xlat16_2.xyz = u_xlat10_0.xyz + (-_c.xyz);
           
@@ -847,13 +849,13 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat3_d.x = dot(u_xlat8.xyz, u_xlat8.xyz);
           
-          u_xlat3_d.x = inversesqrt(u_xlat3_d.x);
+          u_xlat3_d.x = sqrt(u_xlat3_d.x);
           
           u_xlat11.xyz = u_xlat8.xyz * u_xlat3_d.xxx;
           
           u_xlat4.x = dot(in_f.texcoord4.xyz, in_f.texcoord4.xyz);
           
-          u_xlat4.x = inversesqrt(u_xlat4.x);
+          u_xlat4.x = sqrt(u_xlat4.x);
           
           u_xlat4.xyz = u_xlat4.xxx * in_f.texcoord4.xyz;
           
@@ -863,7 +865,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat19 = dot(u_xlat5.xyz, u_xlat5.xyz);
           
-          u_xlat19 = inversesqrt(u_xlat19);
+          u_xlat19 = sqrt(u_xlat19);
           
           u_xlat5.xyz = float3(u_xlat19) * u_xlat5.xyz;
           
@@ -899,7 +901,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat3_d.x = dot(u_xlat8.xyz, u_xlat8.xyz);
           
-          u_xlat3_d.x = inversesqrt(u_xlat3_d.x);
+          u_xlat3_d.x = sqrt(u_xlat3_d.x);
           
           u_xlat8.xyz = u_xlat8.xyz * u_xlat3_d.xxx;
           
@@ -935,7 +937,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat16 = dot(in_f.texcoord7.xyz, in_f.texcoord7.xyz);
           
-          u_xlat16 = texture2D(_LightTexture0, float2(u_xlat16)).x;
+          u_xlat16 = tex2D(_LightTexture0, float2(u_xlat16)).x;
           
           u_xlat4.xyz = float3(u_xlat16) * _LightColor0.xyz;
           
@@ -1158,7 +1160,7 @@ Shader "Shader Forge/Mod_guawu"
           
           u_xlat0_d.xy = in_f.texcoord1.xy * _t1_ST.xy + _t1_ST.zw;
           
-          u_xlat10_0 = texture2D(_t1, u_xlat0_d.xy).z;
+          u_xlat10_0 = tex2D(_t1, u_xlat0_d.xy).z;
           
           u_xlat16_1 = u_xlat10_0 * 1.09200001;
           

@@ -4,13 +4,15 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: "SL_02_02"
-  m_Shader: {fileID: 4800000, guid: 2831cd60698445ce9b8b85ac396ba1fe, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SL_02_02
+  m_Shader: {fileID: 4800000, guid: 67e78ad2b07a60641a3aaa6295da81a2, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -53,3 +55,4 @@ Material:
     - _c: {r: 0.9191176, g: 0.7289553, b: 0.2297794, a: 1}
     - _node_3294: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _node_8063: {r: 0.07079159, g: 0.009191178, b: 0.125, a: 1}
+  m_BuildTextureStacks: []
