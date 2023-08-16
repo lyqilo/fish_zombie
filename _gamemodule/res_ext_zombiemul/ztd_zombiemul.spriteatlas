@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ztd_zombiemul
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2b57d091d054c2e4dbf3001fdd34cf82, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300046, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300014, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300028, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300044, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300006, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300010, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300004, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300016, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300038, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300022, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300034, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300032, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300012, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300008, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300018, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300002, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300040, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300030, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300048, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300020, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300042, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300036, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300000, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300026, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300024, guid: ee2f37548a9f49e9b8b983d64e6783d4, type: 3}
+  - {fileID: 21300036, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300002, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300104, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300024, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300052, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300134, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300018, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300124, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300080, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300112, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300136, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300106, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300098, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300096, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300042, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300006, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300070, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300094, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300120, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300088, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300044, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300140, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300016, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300058, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300142, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300130, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300034, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300014, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300138, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300054, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300064, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300086, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300100, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300046, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300030, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300056, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300082, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300012, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300122, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300128, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300000, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300028, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300118, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300040, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300010, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300072, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300090, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300114, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300038, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300026, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300074, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300108, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300116, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300050, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300066, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300020, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300048, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300022, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300102, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300060, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300126, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300032, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300110, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300076, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300132, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300092, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300078, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300084, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300068, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300004, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300062, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  - {fileID: 21300008, guid: a0523926acf848abb0780504e8f6d414, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - chongjibo_159
+  - ef_jiaodiguang
+  - ef_xinguan
+  - ef_glow_guangdian_0035
+  - ef_glow_guangdian_0032
+  - ef_guangyun23
+  - ef_guangyun22
+  - ef_guangyun18
+  - ef_guangyun24
+  - lizi_001
+  - ef_jiaodiguang_1
+  - lizi_003
+  - guan yun_09
+  - ef_lizi01
+  - ef_tf_daoguang
+  - ef_Glow_35
+  - ef_Glow_33
+  - ef_zhezhao 2
+  - ef_glow_19
+  - ef_glow_29
+  - ef_guangyun02
+  - ef_shanguang_0048
+  - guangban_022
+  - guan zhu_01
+  - ef_shanguan07
+  - ef_mubei_1
+  - ef_mubei_2
+  - ef_xian14_01
+  - chongjibo_180
+  - ef_yuansu_0083_1
+  - ef_yingxiongzhan
+  - ef_Glow36
+  - wenli_625
+  - ef_xian12
+  - guangban_203
+  - guangban_202
+  - ef_daoguang_0332_1
+  - ef_daoguang_0332_3
+  - ef_daoguang_0332_2
+  - ef_yuansu_0093_1
+  - ef_liuguang02
+  - ef_glow_30
+  - ef_glow_31
+  - ef_kulou01
+  - ef_xuehua02
+  - ef_yanwu01
+  - ef_jiangshiyan
+  - ef_yanwu06
+  - ef_yanwu05
+  - ef_guangyun11
+  - ef_daoguang_0332
+  - ef_yanwu09
+  - ef_aixin01
+  - ef_guangmang0349
+  - impact_base
+  - guan yun_03
+  - js2_suodingdongxiao4
+  - ef_guangyung
+  - ef_dilie05
+  - ef_gjzs_rktb_zhezhao
+  - ef_dan01
+  - ef_xian03
+  - ef_guanyun01
+  - ef_guangyun111
+  - ef_yingxiongjiantou
+  - ef_Glow037
+  - ef_Jygfz_jin
+  - ef_glow_16
+  - shi tou_01
+  - ef_paopao
+  - dajiangshi2_tongyongbosschuxian_guangyun11
+  - ef_guangyun03
+  - ef_guangyun05
+  - ef_suoding_2
+  - ef_guangyun04
+  - ef_glow_25
+  - ef_guangyun07
+  - ef_wuqi01
+  - ef_guangyun06
+  - ef_glow_23
+  - ef_guangyun09
+  - yan wu_02
+  - ef_glow_20
+  - ef_L_nuqi3
+  - EF_GW_labaji
+  - js2_suoding
+  - xinxin_02
+  - magic_firegolem_fireball_explosion_0005
+  - EF_GW_labajiguang
+  - ef_tf_shoulingkuang
+  - dajiangshi2_meimoboajiang_taoxing3
+  - ef_guangmang0221
+  - Ring
+  - ef_shanguan06
+  - ef_tf_shoulingkuang_1
+  - ef_glow_014_01
+  - xiangguang_211
+  m_RenderDataMap: {}
+  m_Tag: ztd_zombiemul
+  m_IsVariant: 0

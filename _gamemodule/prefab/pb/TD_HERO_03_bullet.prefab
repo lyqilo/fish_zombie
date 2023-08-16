@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -8650746945261096286}
   - component: {fileID: -2864711042384990264}
   - component: {fileID: -4693620965609931645}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: -3745034656113448649}
   - component: {fileID: 8547948102514289095}
   - component: {fileID: -5187548744679775242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: suduixiang
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2382,7 +2382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2542683402800410350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TD_HERO_03_bullet
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2413,7 +2413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -2819085451943190486}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TD_HERO_03_zidan
   m_TagString: 
   m_Icon: {fileID: 0}

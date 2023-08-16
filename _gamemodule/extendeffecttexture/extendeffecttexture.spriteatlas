@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: extendeffecttexture
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: b8120cf58dcfc3e409e0bc02c0dfdd9e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4ea4ea5049994ac29b0a67c64e625b46, type: 3}
+  - {fileID: 21300000, guid: a3e1d1b00a9342638af09bc499bc48ca, type: 3}
+  - {fileID: 21300000, guid: 4e54e3e0f2f54dffa28b8422ac6e2235, type: 3}
+  - {fileID: 21300000, guid: 26810b21e93c4ccea3bba33c0f3019b0, type: 3}
+  - {fileID: 21300000, guid: 9406de61f271426c8d84f4e51f238426, type: 3}
+  - {fileID: 21300000, guid: 92b59a81f1214805ab695cfbbe8f46a1, type: 3}
+  - {fileID: 21300000, guid: a9ed6aa172a34b92a31f4b90b1a7b13e, type: 3}
+  - {fileID: 21300000, guid: 1a2d8f23e46b00b429db52ec6b53c96b, type: 3}
+  - {fileID: 21300000, guid: a397c0f3ed424f80a665053623ce07a9, type: 3}
+  - {fileID: 21300000, guid: c1a6f4544d7e431bb05fe5a150056e09, type: 3}
+  - {fileID: 21300000, guid: 2a45c4c49b444b53bb9012e6269e0ea1, type: 3}
+  - {fileID: 21300000, guid: 10726c45e435442a8547fb657158c8e8, type: 3}
+  - {fileID: 21300000, guid: 3256d765af9146c78eedc6c212e0e2cb, type: 3}
+  - {fileID: 21300000, guid: 020219160866424392dedc38d14b3e31, type: 3}
+  - {fileID: 21300000, guid: f0abdad6d55948b5bc9949fe890ba64f, type: 3}
+  - {fileID: 21300000, guid: b0c5dee6aabf47539821c2f72d9a1115, type: 3}
+  - {fileID: 21300000, guid: ade0a2172fca6d544b5c856e013ba11a, type: 3}
+  - {fileID: 21300000, guid: 771098679cc140a1aa1536b9d04b2020, type: 3}
+  - {fileID: 21300000, guid: d8e6687846a413e45b57e48bfaa981b4, type: 3}
+  - {fileID: 21300000, guid: 5c96cf9868d94248a5d89f4ee732fcc8, type: 3}
+  - {fileID: 21300000, guid: 053ea65991b64e71a2697c9f546f738a, type: 3}
+  - {fileID: 21300000, guid: 41d0717ae69e432dbf2d06b3aadc546c, type: 3}
+  - {fileID: 21300000, guid: fd94091bc92a414e8ed554d881df0f32, type: 3}
+  - {fileID: 21300000, guid: 3fe71f2b4f0f4f31a58ff6a3b59215f4, type: 3}
+  - {fileID: 21300000, guid: aaedcd4b54e442989c8d2a4296588497, type: 3}
+  - {fileID: 21300000, guid: 8b47e25b950a45d699199aa125a0d966, type: 3}
+  - {fileID: 21300000, guid: 088a60abf8bd4569873564c871525a4a, type: 3}
+  - {fileID: 21300000, guid: 3d36b2fb8684409581a5df8f68c4e1da, type: 3}
+  - {fileID: 21300000, guid: 4dc20f1c97918af4f96eb14c03f21e51, type: 3}
+  - {fileID: 21300000, guid: 593f8a4c24bc43d4bebf62b391667e71, type: 3}
+  - {fileID: 21300000, guid: fa84d6ac552e4670b98f1f5451837100, type: 3}
+  - {fileID: 21300000, guid: 9ee635fc0f3f4df981a6d68956a6471d, type: 3}
+  - {fileID: 21300000, guid: 92e0066dd0884623a252c04c34c3c5d4, type: 3}
+  - {fileID: 21300000, guid: 6cbf0dfd306f41ba899a23219b5fff8e, type: 3}
+  - {fileID: 21300000, guid: eb86256ef9391184280b31f081906052, type: 3}
+  - {fileID: 21300000, guid: 61eb609e57f145b6a5eeaa89c03597a8, type: 3}
+  - {fileID: 21300000, guid: 26e2759ed4184b4c89729fab99d95b52, type: 3}
+  - {fileID: 21300000, guid: 8ff0edeea94744468ca1e3c574559835, type: 3}
+  - {fileID: 21300000, guid: 9289693f3a054319ba0fc0a667e0a1ba, type: 3}
+  - {fileID: 21300000, guid: f50a714f106acdf4bbc28d3f50f00550, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ef_glow_30
+  - ef_glow_23
+  - ef_guangyun03_0
+  - ef_guangyun23
+  - baojiang1
+  - impact_base
+  - ef_mubei_1
+  - caizhi
+  - ef_glow_19
+  - ef_guangyun06
+  - ef_mubei_2
+  - ef_guangyun10
+  - ef_guangyung
+  - ef_guanyun01
+  - ef_glow_31
+  - ef_wuqi01
+  - baojiang1
+  - ef_gjzs_rktb_zhezhao
+  - baojiang1
+  - ef_glow_29
+  - ef_shanguang_0048
+  - ef_glow_25
+  - ef_saoguang04
+  - ef_Glow_35
+  - guan zhu_01
+  - FJ_SanShe_001
+  - ef_make_ztd
+  - sf_noise_clouds_01
+  - guangban_202
+  - ef_guangyun09
+  - ef_glow_16
+  - ef_make01
+  - ef_guangyun03
+  - wenli_118
+  - ef_yanwu05
+  - ef_l_caidai
+  - ef_shanguan07
+  - EF_shandiansui
+  - ef_saoguang512_td
+  - ef_guangyun04
+  m_RenderDataMap: {}
+  m_Tag: extendeffecttexture
+  m_IsVariant: 0

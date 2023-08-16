@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -7873670907373300195}
   - component: {fileID: -8475123115653922102}
   - component: {fileID: 4878316532226823177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tiao1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 3906768762097876524}
   - component: {fileID: 9212837605851761006}
   - component: {fileID: -9027547319262715371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ying
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2406,7 +2406,7 @@ GameObject:
   - component: {fileID: -8784522238605247844}
   - component: {fileID: -8482573512510497257}
   - component: {fileID: -1261385509247567815}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wei
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4705,7 +4705,7 @@ GameObject:
   m_Component:
   - component: {fileID: -116725530670082931}
   - component: {fileID: 9009413506202070330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TD_HERO_02_zidan
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4760,7 +4760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1948339920510825909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TD_HERO_02_bullet
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4794,7 +4794,7 @@ GameObject:
   - component: {fileID: -5592269441485625821}
   - component: {fileID: -1050651051927525226}
   - component: {fileID: -8683149177143825990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4889,7 +4889,7 @@ GameObject:
   - component: {fileID: -2812535641166873404}
   - component: {fileID: -5394227771609519159}
   - component: {fileID: 7415658023119546570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tiao
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4984,7 +4984,7 @@ GameObject:
   - component: {fileID: -6207296830288087464}
   - component: {fileID: 8825939673519903190}
   - component: {fileID: -1508675888962109773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube1
   m_TagString: 
   m_Icon: {fileID: 0}

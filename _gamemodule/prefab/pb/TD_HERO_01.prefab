@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: -2672322655012546588}
   - component: {fileID: -9168679589726040633}
   - component: {fileID: 3786919618433166821}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: guang1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2288,7 +2288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6588815467786313263}
   - component: {fileID: -116988043965499704}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: img2
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2370,7 +2370,7 @@ GameObject:
   m_Component:
   - component: {fileID: -1774936000688118430}
   - component: {fileID: -4018774576459019835}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: jiantou
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2452,7 +2452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1880923233482480196}
   - component: {fileID: -4159466389992218655}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: TD_HERO_01
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2517,7 +2517,7 @@ GameObject:
   - component: {fileID: -7158560823082830297}
   - component: {fileID: 5407500143029401416}
   - component: {fileID: -6969026882910942646}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: yuan
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4796,7 +4796,7 @@ GameObject:
   - component: {fileID: 3293639202565931999}
   - component: {fileID: -7445810281587216854}
   - component: {fileID: -8150877059570741356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: guang2
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -7112,7 +7112,7 @@ GameObject:
   m_Component:
   - component: {fileID: -7091144797505004461}
   - component: {fileID: 7540321225134397430}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: percent
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -7195,7 +7195,7 @@ GameObject:
   - component: {fileID: -146298574163150182}
   - component: {fileID: 5000326626712857077}
   - component: {fileID: -6060723532273758947}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: guang01
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9508,7 +9508,7 @@ GameObject:
   m_Component:
   - component: {fileID: -2195864848328102407}
   - component: {fileID: 7358154947345579466}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sp_hero_stand
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9591,7 +9591,7 @@ GameObject:
   - component: {fileID: -8044604638019700131}
   - component: {fileID: -7465702697720060106}
   - component: {fileID: -976108263250046440}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: sp_hero
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9693,7 +9693,7 @@ GameObject:
   - component: {fileID: 6587750939544704758}
   - component: {fileID: 3159522233168314156}
   - component: {fileID: -3733405970248301914}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: sp_hero_self
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9794,7 +9794,7 @@ GameObject:
   m_Component:
   - component: {fileID: -8482975427577715296}
   - component: {fileID: 2845677347079544073}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: num3
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9876,7 +9876,7 @@ GameObject:
   m_Component:
   - component: {fileID: -3845053241771185762}
   - component: {fileID: -8957924759585287825}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: num2
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9959,7 +9959,7 @@ GameObject:
   - component: {fileID: 8102554678350736328}
   - component: {fileID: 9001333527897784343}
   - component: {fileID: 8738615981689122819}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: yuanhuan
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -12236,7 +12236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8343395053168112708}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TD_Effect_PAOTAI
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -12268,7 +12268,7 @@ GameObject:
   - component: {fileID: 2465640535124356278}
   - component: {fileID: -8969919193268029525}
   - component: {fileID: -7654976805850846248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GUANG
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -14569,7 +14569,7 @@ GameObject:
   m_Component:
   - component: {fileID: -8812598523320932644}
   - component: {fileID: -2791177973466610703}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: num1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -14650,7 +14650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -9051650285524423654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Effect_HitRat
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -14693,7 +14693,7 @@ GameObject:
   m_Component:
   - component: {fileID: -8840041131050886062}
   - component: {fileID: 4333596913872230071}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: img1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -14774,7 +14774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -8707004402186623758}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Effect_UI_BUFF
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -14811,7 +14811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5145591160209785660}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TD_Effect_L_baoqi1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -14844,7 +14844,7 @@ GameObject:
   - component: {fileID: -7683991714547077863}
   - component: {fileID: -90830830681527553}
   - component: {fileID: -8364153599433697169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: qi
   m_TagString: 
   m_Icon: {fileID: 0}

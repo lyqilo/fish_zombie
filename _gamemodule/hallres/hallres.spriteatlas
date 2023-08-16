@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: hallres
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 8eea1ac5eac97c846a92d4e3d454733e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3cce8960fc164233926b75be71cc3beb, type: 3}
+  - {fileID: 21300000, guid: ab44e64109d9458499c2bf27488a7dbd, type: 3}
+  - {fileID: 21300000, guid: bf907552beae45be9acc7f38f5b0853e, type: 3}
+  - {fileID: 21300000, guid: 41710843d29b4484a28d05276a1a90d6, type: 3}
+  - {fileID: 21300000, guid: 66679906685549ff9c8880012fe2184c, type: 3}
+  - {fileID: 21300000, guid: a950794889a143c49f1dcdee8830a95c, type: 3}
+  - {fileID: 21300000, guid: 21b0f42ae7d847cebfe8eff7e2ceda21, type: 3}
+  - {fileID: 21300000, guid: 2cfc8d7a0d814bd98ef7e9663f0d45a4, type: 3}
+  - {fileID: 21300000, guid: 00ac693b753640fc9b0f8fd44d81e528, type: 3}
+  - {fileID: 21300000, guid: d0b9d18b12e74d8aa6993f3b57c24d41, type: 3}
+  - {fileID: 21300000, guid: 1d75da2c8ada49219610abb29952ba99, type: 3}
+  - {fileID: 21300000, guid: 1a9cb8acb59347e0a97807f89752b7ce, type: 3}
+  - {fileID: 21300000, guid: 73dd05ec047148e59449eb94a4a0aa39, type: 3}
+  - {fileID: 21300000, guid: 0a4d4c4d684443a9a1117e30ec3e56c0, type: 3}
+  - {fileID: 21300000, guid: 4ff0f91e693c428797fd8535b9371f8c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - xiaotankuang
+  - ld_an_cs
+  - cs_hd_rktb
+  - ef_dziguang1
+  - xslb_xx_lb_yy2
+  - caizhi
+  - ef_make01
+  - head_p_014
+  - jiahao
+  - wenzidi
+  - zuanshiicon
+  - xslb_xx_lb
+  - hongdian
+  - jsj_zp_zy_k
+  - ef_guang03
+  m_RenderDataMap: {}
+  m_Tag: hallres
+  m_IsVariant: 0

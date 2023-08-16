@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: -5163192320522623533}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TD_HERO_04_zidan
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: -3025020643996378428}
   - component: {fileID: 8513885823076359279}
   - component: {fileID: 4965446303076559391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: huo
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2325,7 +2325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9095745765302390954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TD_HERO_04_bullet
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2358,7 +2358,7 @@ GameObject:
   - component: {fileID: -8537469042436828067}
   - component: {fileID: -2940486333074780628}
   - component: {fileID: -8853055647360148075}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: huo2
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4636,7 +4636,7 @@ GameObject:
   - component: {fileID: 7099549345873346527}
   - component: {fileID: -3128900228284043654}
   - component: {fileID: -8910118601103041614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: heiyan
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -6914,7 +6914,7 @@ GameObject:
   - component: {fileID: -8627869099104501148}
   - component: {fileID: -864132454813251031}
   - component: {fileID: 4218292165789329785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 474
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9192,7 +9192,7 @@ GameObject:
   - component: {fileID: 3584454229172158509}
   - component: {fileID: -7351039058818448842}
   - component: {fileID: -923627474058544406}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wei1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -11470,7 +11470,7 @@ GameObject:
   - component: {fileID: -3037665808098953383}
   - component: {fileID: 9044573825872302181}
   - component: {fileID: -3689471495879425298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: huoxing
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -13748,7 +13748,7 @@ GameObject:
   - component: {fileID: 9195026127457840096}
   - component: {fileID: -6454941627436527173}
   - component: {fileID: -5881416123070139421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: huo1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -16026,7 +16026,7 @@ GameObject:
   - component: {fileID: -7324547692457522334}
   - component: {fileID: -7436998162129314726}
   - component: {fileID: -3165842094753042950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wei2
   m_TagString: 
   m_Icon: {fileID: 0}

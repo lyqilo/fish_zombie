@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 5868349871408652178}
   - component: {fileID: 3125206060925823758}
   - component: {fileID: 5365050170573408169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: glow02
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2596,7 +2596,7 @@ GameObject:
   - component: {fileID: -4175783739014466001}
   - component: {fileID: 5409693572806717634}
   - component: {fileID: -7478143197004318719}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fz01
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4910,7 +4910,7 @@ GameObject:
   m_Component:
   - component: {fileID: -7319613661908582377}
   - component: {fileID: 7588619546681010750}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Effect_Jygfz_Jin_1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4964,7 +4964,7 @@ GameObject:
   - component: {fileID: -4357013901135029216}
   - component: {fileID: 5431054133523161109}
   - component: {fileID: 9081774819493324121}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fz02
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -7300,7 +7300,7 @@ GameObject:
   m_Component:
   - component: {fileID: -4865498082333189908}
   - component: {fileID: 2050045327566144414}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sp_shadow
   m_TagString: 
   m_Icon: {fileID: 0}

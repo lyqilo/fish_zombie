@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: -3350453890586806035}
   - component: {fileID: -8678909554803393432}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Effect_Jygfz_Jin_1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8635741263853268419}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TD_Effect_Baohu01
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: -7092387101603553259}
   - component: {fileID: -3759175636551543126}
   - component: {fileID: -3746852350298938303}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fz02
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: -6183359497429539521}
   - component: {fileID: 8718654561336469118}
   - component: {fileID: -4883666277648832598}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hudun02
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4720,7 +4720,7 @@ GameObject:
   - component: {fileID: -3381083674731102536}
   - component: {fileID: -4331450082646628814}
   - component: {fileID: 6253876546750979393}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: glow02
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -7266,7 +7266,7 @@ GameObject:
   - component: {fileID: -4611169704575475279}
   - component: {fileID: -4167372443828376419}
   - component: {fileID: 3917520398484936693}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hudun01
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9553,7 +9553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3295346436547015608}
   - component: {fileID: -6996708091757593149}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sp_shadow
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9636,7 +9636,7 @@ GameObject:
   - component: {fileID: 9179717930844330079}
   - component: {fileID: 4816390025644607596}
   - component: {fileID: -7801997452153140376}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hudun
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -11929,7 +11929,7 @@ GameObject:
   - component: {fileID: 8890205967958868777}
   - component: {fileID: 8632150047566345847}
   - component: {fileID: 6045434473097499373}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lzii02
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -14208,7 +14208,7 @@ GameObject:
   - component: {fileID: -5938526774293175599}
   - component: {fileID: 7889839603763512344}
   - component: {fileID: -7250861117817489019}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fz01
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -16523,7 +16523,7 @@ GameObject:
   - component: {fileID: -6448727449499743980}
   - component: {fileID: -4001471152982792460}
   - component: {fileID: 2520660649307444305}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lzii
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -18802,7 +18802,7 @@ GameObject:
   - component: {fileID: 3222298247140247878}
   - component: {fileID: -2007038711814468883}
   - component: {fileID: -7168728481451466281}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hudun03
   m_TagString: 
   m_Icon: {fileID: 0}

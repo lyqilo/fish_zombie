@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: -7544357041879330911}
   - component: {fileID: 3711269702197392996}
   - component: {fileID: -6535757676601947278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dan
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5012879780521539696}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TD_HERO_01_zidan
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5984457996444388449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TD_HERO_01_bullet
   m_TagString: 
   m_Icon: {fileID: 0}

@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: -6816168536028141400}
   - component: {fileID: -8706496539839179138}
   - component: {fileID: 5818007612498535120}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dai
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -2488,7 +2488,7 @@ GameObject:
   - component: {fileID: 7813944583906548142}
   - component: {fileID: 4041602482950831818}
   - component: {fileID: -7977690658513147521}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: glow02
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -4910,7 +4910,7 @@ GameObject:
   - component: {fileID: -1242051547956679038}
   - component: {fileID: -795235584114596860}
   - component: {fileID: 8303099845881284817}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: yun
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -7223,7 +7223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7660768892853084454}
   - component: {fileID: -2057673126869271218}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sp_shadow
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -7304,7 +7304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5136882518371548231}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TD_Efffect_yewangdaiji
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -7339,7 +7339,7 @@ GameObject:
   - component: {fileID: -845704375192200265}
   - component: {fileID: 7998233529051295579}
   - component: {fileID: 6994776173666815665}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fz02
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -9675,7 +9675,7 @@ GameObject:
   - component: {fileID: -8740942269530482756}
   - component: {fileID: -2719441702043642293}
   - component: {fileID: -9047501248734029898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fz01
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -11988,7 +11988,7 @@ GameObject:
   m_Component:
   - component: {fileID: -9197726649148418230}
   - component: {fileID: -3934905417467090141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Effect_Jygfz_Jin_1
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -12042,7 +12042,7 @@ GameObject:
   - component: {fileID: 6797159763707231364}
   - component: {fileID: 3710477873301915033}
   - component: {fileID: -8684820946368278114}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beijing
   m_TagString: 
   m_Icon: {fileID: 0}
